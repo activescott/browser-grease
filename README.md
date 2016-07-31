@@ -2,7 +2,7 @@
 Greasemonkey scripts
 
 # Installation #
-If you're not familiar with [Greasemonkey](https://en.wikipedia.org/wiki/Greasemonkey) then go [here](https://openuserjs.org/about/Userscript-Beginners-HOWTO#how-do-i-get-going-) to install Greasemonkey or the equivelent extension for your browser. 
+To use [Greasemonkey](https://en.wikipedia.org/wiki/Greasemonkey) user scripts you need to first install a browser extension. For Firefox, install [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/). For Chrome, install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
 
 Once you have Greasemonkey or the equivelent for your browser installed, go [here](https://openuserjs.org/users/activescott/scripts) to install the scripts.
 
