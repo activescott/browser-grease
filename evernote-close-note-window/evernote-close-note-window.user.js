@@ -1,6 +1,9 @@
 // ==UserScript==
 // @name        evernote-close-note-window
-// @description When an evernote note is opened with a web link (https://...) AND the note is subsequently opened in an installed desktop evernote application, this script will close the browser window that evernote otherwise leaves open. 
+// @description When an evernote note is opened with a web link (https://...) AND the note is subsequently opened in an installed desktop evernote application, this script will close the browser window that evernote otherwise leaves open.
+// @homepageURL https://github.com/activescott/browser-grease
+// @supportURL  https://github.com/activescott/browser-grease/issues
+// @license     Apache-2.0
 // @namespace   activescott
 // @include     https://www.evernote.com/shard/*
 // @version     1
