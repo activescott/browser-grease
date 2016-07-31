@@ -4,8 +4,11 @@ Greasemonkey scripts
 # Installation #
 To use [Greasemonkey](https://en.wikipedia.org/wiki/Greasemonkey) user scripts you need to first install a browser extension. For Firefox, install [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/). For Chrome, install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
 
-Once you have Greasemonkey or the equivelent for your browser installed, go [here](https://openuserjs.org/users/activescott/scripts) to install the scripts.
+Once you have Greasemonkey or the equivelent for your browser installed, click on the script name below to install the script:
 
+* **[Evernote Close Note Window](https://github.com/activescott/browser-grease/raw/master/evernote-close-note-window/evernote-close-note-window.user.js)** - Closes the browser window that Evernote otherwise leaves open an Evernote note is opened with a web link and the note is subsequently opened in the Evernote desktop application.
+
+*Also available on [OpenUserJS](https://openuserjs.org/users/activescott/scripts).*
 
 # Development #
 ## Deployment ##
