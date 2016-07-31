@@ -10,6 +10,11 @@ Once you have Greasemonkey or the equivelent for your browser installed, click o
 
 *Also available on [OpenUserJS](https://openuserjs.org/users/activescott/scripts).*
 
+
+# Support #
+This is not supported, but if you run into a problem or have a request, [create an issue](https://github.com/activescott/browser-grease/issues) and I'll respond when I have time. 
+
+
 # Development #
 ## Deployment ##
 Go to https://openuserjs.org/user/add/scripts
