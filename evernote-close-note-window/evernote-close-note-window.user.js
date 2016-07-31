@@ -6,7 +6,7 @@
 // @license     Apache-2.0
 // @namespace   activescott
 // @include     https://www.evernote.com/shard/*
-// @version     1
+// @version     1.1
 // @grant       none
 // @run-at document-idle
 // ==/UserScript==
