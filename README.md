@@ -8,7 +8,7 @@ Once you have Greasemonkey or the equivelent for your browser installed, click o
 
 * **[Evernote Close Note Window](https://github.com/activescott/browser-grease/raw/master/evernote-close-note-window/evernote-close-note-window.user.js)** - Closes the browser window that Evernote otherwise leaves open an Evernote note is opened with a web link and the note is subsequently opened in the Evernote desktop application.
 
-* **[Smartsheet Dashboard Scroller](https://github.com/activescott/browser-grease/raw/master/smartsheet-dashboard-scroller/smartsheetDashboardScroller.user.js) - Adds a new toolbar button to Smartsheet Dashboards to add an auto-scrolling feature that scrolls to each Title widget and pauses for one minute.
+* **[Smartsheet Dashboard Scroller](https://github.com/activescott/browser-grease/raw/master/smartsheet-dashboard-scroller/smartsheetDashboardScroller.user.js)** - Adds a new toolbar button to Smartsheet Dashboards to add an auto-scrolling feature that scrolls to each Title widget and pauses for one minute.
 
 *Also available on [OpenUserJS](https://openuserjs.org/users/activescott/scripts).*
 
