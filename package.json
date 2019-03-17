@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "prettier": "1.16.4"
+  },
+  "scripts": {
+    "lint": "for file in ./**/*.user.js; do prettier --write $file; done"
+  }
+}

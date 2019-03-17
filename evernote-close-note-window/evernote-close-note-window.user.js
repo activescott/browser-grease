@@ -11,39 +11,55 @@
 // @run-at document-idle
 // ==/UserScript==
 function isEvernoteAppInstalled() {
-    return window.__EVERNOTE_ACTIONBEAN__.appInstalled && !window.__EVERNOTE_ACTIONBEAN__.appNotInstalled;
+  return (
+    window.__EVERNOTE_ACTIONBEAN__.appInstalled &&
+    !window.__EVERNOTE_ACTIONBEAN__.appNotInstalled
+  )
 }
 
 function isItTimeToClose() {
-    return document.readyState === 'complete';
+  return document.readyState === "complete"
 }
 
 function closeIt() {
-    // it appears that so long as evernote scripts think the app is installed, evernote open's the app ASAP. So we wait on the doc and all scripts to completely load and close this window
+  // it appears that so long as evernote scripts think the app is installed, evernote open's the app ASAP. So we wait on the doc and all scripts to completely load and close this window
 
-    // by waiting on document.readyState we shouldn't need a long setTimeout delay. If this ever stops the note from opening in the app, increase the delay setTimeout should fix it.
-    const delay = 100;
-    console.log('closing after ', delay, 'ms...');
-    setTimeout(() => { console.log('closing!'); window.close(); }, delay);
+  // by waiting on document.readyState we shouldn't need a long setTimeout delay. If this ever stops the note from opening in the app, increase the delay setTimeout should fix it.
+  const delay = 100
+  console.log("closing after ", delay, "ms...")
+  setTimeout(() => {
+    console.log("closing!")
+    window.close()
+  }, delay)
 }
 
 function main() {
-    console.log('evernote-close-note-window GM script running at document.readyState=', document.readyState, 'isEvernoteAppInstalled=', isEvernoteAppInstalled(), 'isItTimeToClose=', isItTimeToClose());
+  console.log(
+    "evernote-close-note-window GM script running at document.readyState=",
+    document.readyState,
+    "isEvernoteAppInstalled=",
+    isEvernoteAppInstalled(),
+    "isItTimeToClose=",
+    isItTimeToClose()
+  )
 
-    if (isEvernoteAppInstalled()) {
-        // if app is installed close it as soon as we think evernote launched the app. If not installed, don't close it.
-        if (isItTimeToClose()) {
-            closeIt();
-        }
-        else {
-            // if we're not ready yet, lets wait on the doc to complete loading everything (and thus evernote's script to launch app)...
-            console.log('doc not ready (', document.readyState, '), registering onreadystatechange handler...');
-            document.onreadystatechange = function() {
-                console.log('onreadystatechange:', document.readyState);
-                document.readyState === 'complete' && main();
-            }
-        }
+  if (isEvernoteAppInstalled()) {
+    // if app is installed close it as soon as we think evernote launched the app. If not installed, don't close it.
+    if (isItTimeToClose()) {
+      closeIt()
+    } else {
+      // if we're not ready yet, lets wait on the doc to complete loading everything (and thus evernote's script to launch app)...
+      console.log(
+        "doc not ready (",
+        document.readyState,
+        "), registering onreadystatechange handler..."
+      )
+      document.onreadystatechange = function() {
+        console.log("onreadystatechange:", document.readyState)
+        document.readyState === "complete" && main()
+      }
     }
+  }
 }
 
-main();
+main()
