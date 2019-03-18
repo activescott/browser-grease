@@ -6,10 +6,10 @@
 // @supportURL  https://github.com/activescott/browser-grease/issues
 // @license     Apache-2.0
 // @namespace   activescott
-// @version     1.1
+// @version     1.2
 // @grant       none
 // @run-at document-idle
-// @match       https://app.smartsheet.com/dashboards/*
+// @match       https://app.smartsheet.com/*
 // ==/UserScript==
 
 Promise.delay = n => new Promise(resolve => setTimeout(resolve, n))
